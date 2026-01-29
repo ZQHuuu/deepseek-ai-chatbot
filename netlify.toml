@@ -1,13 +1,13 @@
 [build]
   command = "npm run build"
-  publish = ".next/static"
+  publish = ".next"
   functions = ".next/serverless"
 
 [dev]
   command = "npm run dev"
   port = 3000
 
-[headers]
+[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
