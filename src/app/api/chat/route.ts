@@ -26,7 +26,7 @@ export async function POST(req: Request) {
   await createMessage(chat_id, lastMessage.content, lastMessage.role)
   
   const result = streamText({
-    model: deepseek('deepseek-v3'),
+    model: deepseek(model || 'deepseek-v3'),
     system: 'You are a helpful assistant.',
     messages,
     onFinish: async(result) => {

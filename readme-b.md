@@ -28,12 +28,3 @@ npx drizzle-kit push
 react query文档网址 https://tanstack.com/query/latest/docs/framework/react/overview
 npm i @tanstack/react-query
 npm i axios
-
-github仓库网址
-https://github.com/ZQHuuu/deepseek-ai-chatbot
-
-netlify部署网址
-https://deepseek-ai-chatbot.netlify.app/
-
-vercel部署网址
-https://deepseek-ai-chatbot-topaz.vercel.app/

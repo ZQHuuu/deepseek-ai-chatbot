@@ -40,13 +40,22 @@ export default function Page() {
         setModel(model === 'deepseek-v3' ? 'deepseek-r1' : 'deepseek-v3')
     }
 
+    // 使用ref存储当前模型，确保useChat使用最新的模型值
+    const modelRef = useRef(model)
+    useEffect(() => {
+        modelRef.current = model
+    }, [model])
+
     const { messages, input, handleInputChange, handleSubmit, append } = useChat({
         body: {
-            model: model,
+            model: modelRef.current,
             chat_id: chat_id,
             chat_user_id: chat?.userId
         },
-        initialMessages: previousMessages
+        initialMessages: previousMessages,
+        onError: (error) => {
+            console.error('Chat error:', error)
+        }
     });
 
 
@@ -108,7 +117,7 @@ export default function Page() {
                             onClick={handleChangeModel}
                         >
                             <p className="text-sm">
-                                深度思考(R1)
+                                {model === 'deepseek-r1' ? '深度思考(R1)' : '深度思考(V3)'}
                             </p>
                         </div>
                     </div>
