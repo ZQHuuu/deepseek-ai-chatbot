@@ -18,8 +18,7 @@ chatbot网址 https://ai-sdk.dev/docs/ai-sdk-ui/chatbot#chatbot
 
 阿里云百炼API Key网址 https://bailian.console.aliyun.com/cn-beijing/?spm=5176.12818093_47.console-base_search-panel.dtab-product_sfm.3be916d0hVCM9p&scm=20140722.S_sfm._.ID_sfm-RL_%E7%99%BE%E7%82%BC-LOC_console_console-OR_ser-V_4-P0_0&tab=globalset#/efm/api_key
 
-supabase网址 https://supabase.com/dashboard/org/mwpsxcwzynxrvkanqeuk
-数据库密码 zwWAxFy5xgvH3asL
+supabase网址 https://supabase.com/dashboard/org/
 
 drizzle ORM网址 https://orm.drizzle.org.cn/docs/get-started/supabase-new
 npm i drizzle-orm postgres dotenv
